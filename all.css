@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,::before,*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1088px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-style: Noto Sans TC;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;    
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.chattalkericon a{
+    display: block;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/chatTalker_images/logo.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 218px;
+    height: 40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.solution a{
+    background-color: #FF5D50;
+    display: block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.banner2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannertitle{
+    width: 50%;
+}
+
+.banner h2{
+    font-size: 18px;
+    color: #56C4C5;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.banner h5{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.banner h6{
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.banner img{
+    max-width: 532px;
+    height: 534px;
+}
+
+.socialiconlist{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+
+.socialicon{
+    width: 23%;
+    text-align: center;
+}
+
+@media(max-width:767px){
+    .socialicon{
+        width: 100%;
+    }
+}
+
+.socialicon img{
+    width: 90px;
+    height: 90px;
+}
+
+.socialicon h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.socialicon p{
+    color: #747474;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container H3{
+    padding-bottom: 16px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 217px;
+}
+
+.container p{
+    text-align: center;
+    padding-bottom: 48px;
+    font-size: 20px;
+}
+
+.iconlist{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.iconpic{
+    width: 24%;
+}
+
+@media(max-width:992px){
+    .iconpic{
+        width: 49%;
+    }
+}
+@media(max-width:767px){
+    .iconpic{
+        width: 100%;
+    }
+}
+
+.iconpic h4{
+    text-align: center;
+    font-size: 16px;
+    color: #56c4c5;
+    padding: 16px;
+}
+
+.iconpic p{
+    text-align: center;
+    color: #221e1f;
+    font-size: 16px;
+}
+
+.function{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.functionitemlist{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.functionitem{
+    width: 40%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 2px 10px #00000014;
+    padding: 32px 32px 48px
+}
+
+.functionitem img{
+    width: 52px;
+    height: 52px;
+}
+
+.functionitem h7{
+    padding-top: 48px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.functionitem p{
+    font-size: 16px;
+}
+
+.feature h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.feature p{
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    text-align: left;
+}
+
+.feature a{
+    background-color: #56c4c5;
+    display: inline-block;
+    padding: 12px 32px;
+    color: white;
+    text-decoration: none;
+    border-radius: 22px;
+}
+
+.feature a:hover{
+    background-color: white;
+    color:#56c4c5;
+}
+
+.container h8{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 104px;
+}
+
+.ad{
+    display: flex;
+    justify-content:space-between;
+    max-width: 33%;
+}
+
+@media(max-width:767px){
+    .ad{
+        width: 100%;
+    }
+}
+
+.footer-plan{
+    height: 503px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 260px;
+}
+@media(max-width:767px){
+    .footer-plan{
+        height: 461px;
+    }
+}
+
+.footer-plan h2{
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 48px;
+}
+
+.footer-plan a{
+    background-color: #56c4c5;
+    display: inline-block;
+    padding: 12px 32px;
+    color: white;
+    text-decoration: none;
+    border-radius: 22px;
+}
+
+.footer-plan a:hover{
+    background-color: white;
+    color:#56c4c5;
+}
+
+.footer{
+    background: #f5f5f5;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 16px;
+}
